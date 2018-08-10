@@ -18,7 +18,6 @@ public class Book {
     @OneToOne
     private Publisher publisher;
     
-    
     @ManyToMany
     @JoinTable(name = "author_book", joinColumns = @JoinColumn(name = "book_id"),
     inverseJoinColumns = @JoinColumn(name = "author_id"))
